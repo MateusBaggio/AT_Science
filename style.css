@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 .fundo_header{
     display: flex;
@@ -11,7 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 6vh;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.85) 0%, rgba(50, 255, 190, 0.7225) 100%);
 }
 
@@ -22,23 +26,43 @@ height: 76px;
 
 .texto_header{
     display: flex;
-    margin-top: 22px;
-    gap: 50px;
-    height: 24px;
+    margin-top: 1.5%;
+    gap: 5vw;
+    height: 2vh;
 }
 
 .fim_header{
     display: flex;
-    gap: 30px;
-    margin-right: 25px;
+    gap: 2vw;
+    margin-right: 5%;
+    width: 10%;
 }
 
 .texto{
     font-family:'Nunito Sans';
+    font-size: 1rem;
 }
 
 .primeira_parte{
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 30 0px;
-    background-color: aqua;
+    height: 40vh;
+    box-sizing: content-box;
+}   
+
+.imagem_principal{
+    width: 40vw;
+    height: 30vh
+}
+
+.divisao{
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(90deg, #14A4C1 0%, #17AB9C 57.5%, #7A919C 100%);
+}
+
+.fim{
+    width: 100%;
+    height: 47vh;
 }
