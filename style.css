@@ -7,7 +7,7 @@ body{
 
 .fundo_header{
     display: flex;
-    width: 98.792vw;
+    width: 100vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
