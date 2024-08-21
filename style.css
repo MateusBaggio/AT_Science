@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 body{
-    width: 100vw;
-    height: 100vh;
+    min-width: none;
 }
 
 .fundo_header{
     display: flex;
-    width: 100%;
+    width: 98.792vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -26,14 +23,14 @@ height: 76px;
 .texto_header{
     display: flex;
     margin-top: 1.2%;
-    gap: 5vw;
+    gap: 3.5vw;
     height: 2vh;
 }
 
 .fim_header{
     display: flex;
-    gap: 2vw;
-    width: 10%;
+    gap: 30px;
+    width: 170px;
 }
 
 .texto{
@@ -82,49 +79,30 @@ height: 76px;
     position: relative;
 }
 
-
-
-
-.cards{
-    width: 100%;
-    height: 47vh;
+.cards {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 5vw;
+    width: 100%;
+    height: auto; 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+.card {
+    width: 20vw; 
+    max-width: 300px; 
+    height: auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5vw;
+    gap: 1rem;
 }
 
-#card3{
-    margin-bottom: 2.75%;
-}
-
-#card2{
-    margin-bottom: 2.3%;
-}
-    
-#novo_tamanho{
-    width: 20vw;
-}
-
-#novotamanho_p{
-    width: 20vw;
-}
-
-#novo_tamanho1{
-    width: 20vw;
-}
-
-#novotamanho_p1{
-    width: 20vw;
-}
-
-#novo_tamanho2{
-    width: 20vw;
-}
-
-#novotamanho_p2{
-    width: 20vw;
-}
 
 .dna{
     width: 20vw;
@@ -136,26 +114,28 @@ height: 76px;
 
 
 
-
 .titulinho{
     font-family: 'Poppins';
     color:  #C31815;
     font-weight: bold;
 }
 
-.titulo_noticia{
+.titulo_noticia, .titulo_noticia_card{
     font-family: 'Poppins';
     color: #2A2A2A;
     font-weight: bold;
-    font-size: 1.6rem;
-    width: 30vw;
+    font-size: 15px;
+    width: 420px;
 }
-.previa_noticia{
+.previa_noticia, .previa_noticia_card{
     font-family: 'Poppins';
     color:#2A2A2A;
-    width: 30vw;
-    font-size: 90%;
-    padding-top: 1rem;
+    font-size: 12px;
+    width: 420px;
+}
+
+.previa_noticia_card, .titulo_noticia_card{
+    width: 20vw
 }
 
 .noticia{
@@ -167,167 +147,48 @@ height: 76px;
     font-weight: 500;
 }
 
-@media screen and (max-width: 1588px){
-    #card3{
-        margin-bottom: 2%;
+
+@media(max-width: 720px){
+    .primeira_parte{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .texto{
+        display: none;
+    }
+    .fim_header{
+        display: none;
+    }
+    .divisao{
+        justify-content: center;
+    }
+    .nao_botao{
+        display: none;
     }
 }
 
-@media screen and (max-width: 1564px){
-    #card1{
-        margin-top: 1%;
+@media(max-width: 600px){
+    .imagem_principal{
+        display: none;
     }
-}
-
-@media screen and (max-width: 1572px){
-    #card1{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1544px){
-    #card2{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1540px){
-    #card2{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1548px){
-    #card2{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1504px){
-    #card2{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1498px){
-    #card3{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1486px){
-    #card3{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1488px){
-    #card3{
-        margin-top: 1%;
-    }
-}
-
-@media screen and (max-width: 1438px){
-    #card1{
-        margin-top: 2%;
-    }
-}
-
-@media screen and (max-width: 1362px){
-    #card1{
-        margin-top: 2%;
-    }
-    #card3{
-        margin-top: 2%;
-    }
-}
-
-@media screen and (max-width: 1358px){
-    #card3{
-        margin-top: 2%;
-    }
-}
-
-@media screen and (max-width: 1334px){
-    #card2{
-        margin-top: 3%;
-    }
-}
-
-@media screen and (max-width: 1312px){
-    #card2{
-        margin-top: 4%;
-    }
-    #card1{
-        margin-top: 3.5%;
-    }
-}
-
-@media screen and (max-width: 1288px){
-    #card1{
-        margin-top: 5.5%;
-    }
-}
-
-@media screen and (max-width: 1184px){
-    #card1{
-        margin-top: 6.7%;
-    }
-}
-
-@media screen and (max-width: 1158px){
-    #card2{
-        margin-top: 6%;
-    }
-}
-
-@media screen and (max-width: 1144px){
-    #card3 {
-        margin-top: 4%;
-    }
-}
-
-@media screen and (max-width: 1116px){
     .titulo_noticia{
-        font-size: 1rem;
+        font-size: 24px;
     }
-    #card2{
-        margin-bottom: 8%;
-    }
-    #card3{
-        margin-bottom: 5%;
+    .previa_noticia{
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width: 1100px){
-    #card3 {
-        margin-top: 6.5%;
+@media(max-width: 500px){
+    .titulo_divisao{
+        display: none;
     }
-    #card2{
-        margin-top: 5.5%;
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
-
-@media screen and (max-width: 1102px){
-    #card3 {
-        margin-top: 6.5%;
-    }
-}
-
-@media screen and (max-width: 1094px){
-    #card3 {
-        margin-top: 8%;
-    }
-}
-
-@media screen and (max-width: 1088px){
-    #card2 {
-        margin-top: 7%;
-    }
-}
-
-@media screen and (max-width: 1024px){
-    #card1 {
-        margin-top: 9%;
+    .dna, .previa_noticia_card,.titulo_noticia_card {
+        width: 450px
     }
 }
